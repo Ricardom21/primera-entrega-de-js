@@ -1,17 +1,16 @@
-alert("Bienvenidos El Palmar")
+alert("Bienvenidos a Licoreria El Palmar")
 let nombre = prompt("Ingresa tu Nombre")
 let apellido = prompt("Ingresa tu Apellido")
 let dni = prompt("Ingresa tu Documento")
 let edad = prompt("Ingresa tu Edad")
-alert(nombre)
-alert(apellido)
-alert(dni)
-alert(edad)
+alert("Mi Nombre es " + nombre + " Mi Apellido es " + apellido + " Mi Dni es " + dni + " Mi Edad es " + edad) 
+
 
 
 function validarEdad(edad) {
     if (edad >= 18) {
         return true
+
     }else{
     return false
         }
@@ -30,7 +29,7 @@ let totalCompra =0
 
 
 while (seguirComprando) {
-    let productos = prompt("Ingrese el producto que desea comprar : \n (1) ron \n (2) ginebra \n (3) vodka")
+    let productos = prompt("Ingrese el producto que desea comprar : \n (1) Ron \n (2) Ginebra \n (3) Vodka \n (4) Cervezas \n (5) Whisky")
    
     let monto =0
 
@@ -40,7 +39,11 @@ while (seguirComprando) {
         case "2":  monto = 2000;
         break;
         case "3":  monto = 3000;
-        break;      
+        break; 
+        case "4":  monto = 4000;
+        break;  
+        case "5":  monto = 5000;
+        break;       
         
     
         default:
